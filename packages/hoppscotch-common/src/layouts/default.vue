@@ -10,12 +10,6 @@
           :dbl-click-splitter="false"
           :horizontal="!mdAndLarger"
         >
-          <Pane
-            style="width: auto; height: auto"
-            class="hidden !overflow-auto md:flex md:flex-col"
-          >
-            <AppSidenav />
-          </Pane>
           <Pane class="flex flex-1 !overflow-auto">
             <Splitpanes
               class="no-splitter"
@@ -35,6 +29,12 @@
                 </main>
               </Pane>
             </Splitpanes>
+          </Pane>
+          <Pane
+            style="width: auto; height: auto"
+            class="hidden !overflow-auto md:flex md:flex-col"
+          >
+            <AppSidenav />
           </Pane>
         </Splitpanes>
       </Pane>
