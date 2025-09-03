@@ -18,6 +18,7 @@ declare module 'vue' {
     AiexperimentsModifyTestScriptModal: typeof import('./components/aiexperiments/ModifyTestScriptModal.vue')['default']
     AppActionHandler: typeof import('./components/app/ActionHandler.vue')['default']
     AppBanner: typeof import('./components/app/Banner.vue')['default']
+    AppChatAgentPanel: typeof import('./components/app/ChatAgentPanel.vue')['default']
     AppChatPanel: typeof import('./components/app/ChatPanel.vue')['default']
     AppContextMenu: typeof import('./components/app/ContextMenu.vue')['default']
     AppDeveloperOptions: typeof import('./components/app/DeveloperOptions.vue')['default']
