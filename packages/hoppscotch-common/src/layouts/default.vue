@@ -41,7 +41,7 @@
             style="width: 360px; height: auto"
             class="hidden !overflow-auto md:flex md:flex-col"
           >
-            <ChatAgentPanel />
+            <AppChatAgentPanel />
           </Pane>
         </Splitpanes>
       </Pane>
