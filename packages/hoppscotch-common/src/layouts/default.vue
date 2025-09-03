@@ -36,6 +36,13 @@
           >
             <AppSidenav />
           </Pane>
+          <Pane
+            v-if="mdAndLarger && showChat"
+            style="width: 360px; height: auto"
+            class="hidden !overflow-auto md:flex md:flex-col"
+          >
+            <ChatAgentPanel />
+          </Pane>
         </Splitpanes>
       </Pane>
       <Pane v-if="mdAndLarger" style="height: auto">
@@ -92,6 +99,7 @@ const router = useRouter()
 
 const showSearch = ref(false)
 const showSupport = ref(false)
+const showChat = ref(false)
 
 const expandNavigation = useSetting("EXPAND_NAVIGATION")
 const rightSidebar = useSetting("SIDEBAR")
@@ -179,6 +187,10 @@ defineActionHandler("modals.search.toggle", (_, trigger) => {
 
 defineActionHandler("modals.support.toggle", () => {
   showSupport.value = !showSupport.value
+})
+
+defineActionHandler("modals.chat.toggle", () => {
+  showChat.value = !showChat.value
 })
 
 defineActionHandler("navigation.jump.rest", () => {
