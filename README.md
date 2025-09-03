@@ -1,14 +1,14 @@
 <div align="center">
-  <a href="https://hoppscotch.io">
+  <a href="#">
     <img
       src="https://avatars.githubusercontent.com/u/56705483"
-      alt="Hoppscotch"
+      alt="SpeedPost"
       height="64"
     />
   </a>
   <h3>
     <b>
-      Hoppscotch
+      SpeedPost
     </b>
   </h3>
   <b>
