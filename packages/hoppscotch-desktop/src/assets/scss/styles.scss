@@ -26,13 +26,13 @@
 }
 
 @mixin green-theme {
-  --accent-color: #10b981;
-  --accent-light-color: #34d399;
-  --accent-dark-color: #059669;
+  --accent-color: #E89258;
+  --accent-light-color: #F1A578;
+  --accent-dark-color: #CC7C42;
   --accent-contrast-color: #fff;
-  --gradient-from-color: #a7f3d0;
-  --gradient-via-color: #34d399;
-  --gradient-to-color: #059669;
+  --gradient-from-color: #F1A578;
+  --gradient-via-color: #E89258;
+  --gradient-to-color: #CC7C42;
 }
 
 :root {

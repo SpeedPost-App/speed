@@ -71,6 +71,13 @@
         class="col-span-2 flex items-center justify-between space-x-2"
       >
         <div class="flex">
+          <HoppButtonSecondary
+            v-tippy="{ theme: 'tooltip' }"
+            title="AI Chat"
+            :icon="IconBot"
+            class="rounded hover:bg-primaryDark focus-visible:bg-primaryDark mr-1"
+            @click="invokeAction('modals.chat.toggle')"
+          />
           <tippy
             v-if="
               kernelMode === 'web' &&
@@ -381,6 +388,7 @@ import { WorkspaceService } from "~/services/workspace.service"
 import { InstanceSwitcherService } from "~/services/instance-switcher.service"
 import IconDownload from "~icons/lucide/download"
 import IconLifeBuoy from "~icons/lucide/life-buoy"
+import IconBot from "~icons/lucide/bot"
 import IconSettings from "~icons/lucide/settings"
 import IconUploadCloud from "~icons/lucide/upload-cloud"
 import IconUser from "~icons/lucide/user"
