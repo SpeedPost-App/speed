@@ -6,7 +6,7 @@
 :root {
   @include base-theme;
   @include dark-theme;
-  @include green-theme;
+  @include orange-theme;
   @include dark-editor-theme;
   @include dark-tippy-theme;
 }
@@ -45,7 +45,7 @@
 }
 
 :root[data-accent="indigo"] {
-  @include indigo-theme;
+  @include orange-theme;
 }
 
 :root[data-accent="purple"] {
@@ -67,3 +67,32 @@
 :root[data-accent="yellow"] {
   @include yellow-theme;
 }
+
+/* Icon size tweak: lighten common svg icon sizes by 0.5 step */
+svg.svg-icons {
+  height: calc(var(--line-height-body) + 0.125rem) !important;
+  width: calc(var(--line-height-body) + 0.125rem) !important;
+}
+
+/* Tailwind size class overrides for SVG icons (default + 0.125rem) */
+svg.h-3 { height: 0.875rem !important; }
+svg.h-4 { height: 1.125rem !important; }
+svg.h-5 { height: 1.375rem !important; }
+svg.h-6 { height: 1.625rem !important; }
+svg.h-7 { height: 1.875rem !important; }
+svg.h-8 { height: 2.125rem !important; }
+svg.h-10 { height: 2.625rem !important; }
+svg.h-12 { height: 3.125rem !important; }
+svg.h-14 { height: 3.625rem !important; }
+svg.h-16 { height: 4.125rem !important; }
+
+svg.w-3 { width: 0.875rem !important; }
+svg.w-4 { width: 1.125rem !important; }
+svg.w-5 { width: 1.375rem !important; }
+svg.w-6 { width: 1.625rem !important; }
+svg.w-7 { width: 1.875rem !important; }
+svg.w-8 { width: 2.125rem !important; }
+svg.w-10 { width: 2.625rem !important; }
+svg.w-12 { width: 3.125rem !important; }
+svg.w-14 { width: 3.625rem !important; }
+svg.w-16 { width: 4.125rem !important; }

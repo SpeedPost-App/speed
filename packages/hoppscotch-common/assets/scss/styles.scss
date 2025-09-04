@@ -128,8 +128,8 @@ body {
 .svg-icons {
   @apply flex-shrink-0;
   @apply overflow-hidden;
-  height: var(--line-height-body);
-  width: var(--line-height-body);
+  height: calc(var(--line-height-body) + 0.125rem);
+  width: calc(var(--line-height-body) + 0.125rem);
 }
 
 a {
